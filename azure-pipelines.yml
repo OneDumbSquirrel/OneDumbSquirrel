@@ -1,0 +1,15 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- powershell: |
+    Write-Output "Hello, world!"
+  displayName: 'Run a one-line PowerShell script'
+
+- powershell: |
+    Write-Output "Add other tasks to build, test, and deploy your project."
+    Write-Output "See https://aka.ms/yaml"
+  displayName: 'Run a multi-line PowerShell script'
